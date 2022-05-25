@@ -388,7 +388,9 @@ ingress:
   ##   - name: elasticsearch.local
   ##     path: /
   ##
-  extraHosts: []
+  extraHosts:
+    enabled: false
+    host: ""
   ## @param ingress.extraPaths An array with additional arbitrary paths that may need to be added to the ingress under the main host
   ## e.g:
   ## extraPaths:
